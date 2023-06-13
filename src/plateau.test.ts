@@ -1,25 +1,10 @@
-import { isPrime } from "../src/plateau";
+import { createMap } from "./plateau";
 
-describe("isPrime", () => {
-  it("should return false for 1", () => {
-    expect(isPrime(1)).toBe(false);
-  });
-
-  it("should return true for prime numbers", () => {
-    expect(isPrime(2)).toBe(true);
-    expect(isPrime(3)).toBe(true);
-    expect(isPrime(5)).toBe(true);
-    expect(isPrime(7)).toBe(true);
-    expect(isPrime(11)).toBe(true);
-    expect(isPrime(13)).toBe(true);
-  });
-
-  it("should return false for non-prime numbers", () => {
-    expect(isPrime(4)).toBe(false);
-    expect(isPrime(6)).toBe(false);
-    expect(isPrime(8)).toBe(false);
-    expect(isPrime(9)).toBe(false);
-    expect(isPrime(10)).toBe(false);
-    expect(isPrime(12)).toBe(false);
+describe("Plateau", () => {
+  it("defines the size of the plateau", () => {
+    expect(createMap(5, 5)).toEqual({
+      x: 5,
+      y: 5,
+    });
   });
 });
