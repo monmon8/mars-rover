@@ -15,10 +15,9 @@ export function startRobot(map: Map, initialPosition: InitialPosition) {
             position.y += 1;
           }
 
-          // if (position.direction === "N") {
-          //   position.x += 1;
-          //   position.y += 1;
-          // }
+          if (position.direction === "S") {
+            position.y -= 1;
+          }
         }
       }
       return Object.values(position).join(", ");
