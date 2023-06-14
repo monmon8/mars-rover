@@ -64,4 +64,20 @@ describe(" robot", () => {
 
     expect(robot.move("MM")).toEqual("0, 4, W");
   });
+
+  it("robot moves all around ", () => {
+    const map = {
+      x: 5,
+      y: 5,
+    };
+    const initialPosition = {
+      x: 3,
+      y: 3,
+      direction: "N",
+    };
+
+    const robot = startRobot(map, initialPosition);
+
+    expect(robot.move("MMLMLMMRRRM")).toEqual("3, 3, E");
+  });
 });
