@@ -1,4 +1,4 @@
-type Map = {
+export type Map = {
   x: number;
   y: number;
 };

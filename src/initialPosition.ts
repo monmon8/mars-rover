@@ -1,4 +1,4 @@
-type InitialPosition = {
+export type InitialPosition = {
   x: number;
   y: number;
   direction: string;
