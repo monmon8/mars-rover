@@ -32,4 +32,20 @@ describe(" robot", () => {
 
     expect(robot.move("MM")).toEqual("2, 2, S");
   });
+
+  it("robot moves right ", () => {
+    const map = {
+      x: 5,
+      y: 5,
+    };
+    const initialPosition = {
+      x: 2,
+      y: 4,
+      direction: "E",
+    };
+
+    const robot = startRobot(map, initialPosition);
+
+    expect(robot.move("MM")).toEqual("4, 4, E");
+  });
 });

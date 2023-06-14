@@ -18,6 +18,10 @@ export function startRobot(map: Map, initialPosition: InitialPosition) {
           if (position.direction === "S") {
             position.y -= 1;
           }
+
+          if (position.direction === "E") {
+            position.x += 1;
+          }
         }
       }
       return Object.values(position).join(", ");
