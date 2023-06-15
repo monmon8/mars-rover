@@ -1,4 +1,4 @@
-import { createMap } from "./plateau";
+import { createMap } from "./createMap";
 
 describe("Plateau", () => {
   it("defines the size of the plateau", () => {

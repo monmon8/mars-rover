@@ -1,4 +1,4 @@
-import { Map } from "./plateau";
+import { Map } from "./createMap";
 import { InitialPosition } from "./initialPosition";
 
 type Robot = {
